@@ -7,8 +7,8 @@ export function ConverterStore() {
     money: "1000,00",
     sourceCurrency: 'RUB',
     obtainedCurrency: 'USD',
-    currencyRelation: "2",
-    converseCurrencyRelation: "7",
+    currencyRelation: "0.01",
+    converseCurrencyRelation: "79.98",
     currencyList: [],
 
     get convertedMoney() {
@@ -40,7 +40,7 @@ export function ConverterStore() {
       } else {
         api.getCurrencyRelation(source, obtained)
           .then((currencyRelation) => {
-            this.currencyRelation = Object.values(currencyRelation.quotes)[0];
+            this.currencyRelation = (Object.values(currencyRelation.quotes)[0]).toFixed(2);
           })
           .catch((err) => {
             console.log(err);
@@ -48,7 +48,7 @@ export function ConverterStore() {
 
           api.getCurrencyRelation(obtained, source)
           .then((converseCurrencyRelation) => {
-            this.converseCurrencyRelation = Object.values(converseCurrencyRelation.quotes)[0];
+            this.converseCurrencyRelation = (Object.values(converseCurrencyRelation.quotes)[0]).toFixed(2);
           })
           .catch((err) => {
             console.log(err);

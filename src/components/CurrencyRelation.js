@@ -1,7 +1,7 @@
 function CurrencyRelation(props) {
 
   return (
-    <p className="converter__info" onChange={ props.qwerty }>1 {props.sourceCurrency} = {props.currencyRelation} {props.obtainedCurrency}</p>
+    <p className="converter__info" >1 {props.sourceCurrency} = {props.currencyRelation} {props.obtainedCurrency}</p>
   );
 };
 

@@ -27,8 +27,8 @@ const App = observer(props => {
       [api.getCurrencyRelation(converterStore.sourceCurrency, converterStore.obtainedCurrency),
        api.getCurrencyRelation(converterStore.obtainedCurrency, converterStore.sourceCurrency)])
       .then(([currencyRelation, converseCurrencyRelation]) => {
-        converterStore.currencyRelation = Object.values(currencyRelation.quotes)[0];
-        converterStore.converseCurrencyRelation = Object.values(converseCurrencyRelation.quotes)[0];
+        converterStore.currencyRelation = (Object.values(currencyRelation.quotes)[0]).toFixed(2);
+        converterStore.converseCurrencyRelation = (Object.values(converseCurrencyRelation.quotes)[0]).toFixed(2);
         console.log("currencyRelation" + converterStore.currencyRelation);
         console.log("converseCurrencyRelation" + converterStore.converseCurrencyRelation);
       })
@@ -79,7 +79,6 @@ const App = observer(props => {
                 sourceCurrency = { converterStore.obtainedCurrency }
                 obtainedCurrency = { converterStore.sourceCurrency }
                 currencyRelation = { converterStore.converseCurrencyRelation }
-                qwerty = { converterStore.handleSourceCurrencyChange }
               />
             </div>
           </li>

@@ -11,7 +11,6 @@
 * React.
 * Webpack.
 * Библиотека Mobx.
-* MUI.
 * RestAPI.
 
 Верстка проекта создана при помощи HTML5 и CSS3 версий. Функционал реализован при помощи JavaScript и React.
