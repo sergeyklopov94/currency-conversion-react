@@ -15,7 +15,7 @@
 
 Верстка проекта создана при помощи HTML5 и CSS3 версий. Функционал реализован при помощи JavaScript и React.
 
-* [Ссылка на проект](https://github.com/sergeyklopov94/express-mesto-gha.git)
+* [Ссылка на проект](https://sergeyklopov94.github.io/currency-conversion-react/)
 
 ## Запуск проекта
 
