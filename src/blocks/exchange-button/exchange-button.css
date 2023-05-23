@@ -1,0 +1,11 @@
+.exchange-button{
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: inherit;
+  cursor: pointer;
+}

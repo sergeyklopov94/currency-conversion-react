@@ -1,0 +1,13 @@
+.converter__field {
+  min-height: 42px;
+  min-width: 92px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  border: none;
+  box-sizing: border-box;
+  padding: 24px 22px 55px;
+  background-color: white;
+  outline: none;
+}

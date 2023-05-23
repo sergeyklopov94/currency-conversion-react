@@ -1,0 +1,13 @@
+.converter-container {
+  font-family: 'Roboto', 'Times New Roman', sans-serif;
+  max-width: 936px;
+  width: 100%;
+  min-height: 239px;
+  margin: 91px auto 90px;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  column-gap: 36px;
+  grid-template-columns: 400px 64px 400px;
+  align-items: center;
+}

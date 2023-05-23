@@ -1,0 +1,7 @@
+.converter__box {
+  box-sizing: border-box;
+  border: 1px #cdcdcd solid;
+  border-radius: 8px;
+  width: 400px;
+  height: 200px;
+}
