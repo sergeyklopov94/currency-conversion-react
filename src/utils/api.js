@@ -34,7 +34,7 @@ export class Api {
 const api = new Api({
   baseUrl: 'https://api.apilayer.com/currency_data',
   headers: {
-    apikey: 'O5NiXQNj2bwviWNp0rMxstOCifoaxchC',
+    apikey: '2agPeraN2uG9w1JgIF7PsG9zbklG30ht',
   }
 });
 
